@@ -55,6 +55,13 @@ img {
     padding-right: 16px;
   }
 }
+ /* Exception for full-visibility diagrams */
+.full-image {
+  max-height: none;
+  object-fit: contain;
+  width: 100%;
+}
+``
   </style>
 </head>
 
@@ -134,11 +141,15 @@ img {
       are not mysterious entities, but structured systems of mathematical operations.
     </p>
 
-    <img
-      src="Best Image Neural Network.png"
-      alt="Best Image Neural Network"
-      style="width:75%; max-width:1000px; border-radius:8px;"
-    />
+    <div style="display:flex; justify-content:center;">
+  <img
+    src="Best Image Neural Network.png"
+    alt="Best Image Neural Network"
+    class="full-image"
+    style="width:75%; max-width:1000px; border-radius:8px;
+  />
+</div>
+    
   </div>
 </div>
 

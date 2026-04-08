@@ -1,3 +1,63 @@
+<head>
+  ...
+  <style>
+      /* ========== GLOBAL LAYOUT SAFETY NET ========== */
+
+/* Constrain all images so they never overflow containers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent images from becoming too tall */
+img {
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* Ensure Bootstrap-like columns behave consistently */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Normalize containers across pages */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Section spacing consistency */
+.sectionBlockLayout {
+  box-sizing: border-box;
+}
+
+/* Utility class for image previews (artifact cards, previews, etc.) */
+.preview-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+  img {
+    max-height: 300px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  </style>
+</head>
+
 <!-- HERO SECTION -->
 <div class="row sectionBlockLayout" style="
   padding: 8px; margin: 0;

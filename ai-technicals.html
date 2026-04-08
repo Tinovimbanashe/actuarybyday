@@ -1,0 +1,194 @@
+<!-- HERO SECTION -->
+<div class="row sectionBlockLayout" style="
+  padding: 8px; margin: 0;
+  min-height: 60vh;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+  url('/AI-3.jpg');
+  background-position: center;
+  background-size: cover;
+">
+  <div class="container">
+    <div class="col-md-12" style="margin:180px 0; text-align:center; color:white;">
+      <h1>Technical Insights</h1>
+      <h4 style="color:#dddddd;">Exploring the Core of Artificial Intelligence</h4>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="row sectionBlockLayout" style="padding:60px 0;">
+  <div class="container" style="max-width:900px;">
+    <h2>Less Razzle Dazzle, More Facts Please</h2>
+    <p>
+      While I am proud of my EcoTravel chatbot, I am even more proud of the lessons learnt and
+      my acceptance of the limitations of my own intelligence as a human living in the age of AI.
+    </p>
+    <p>
+      AI is fun to experiment with, but far more valuable when we actually understand what it is
+      and what it is not. This page captures my current understanding, shaped by class notes,
+      actuarial training, and many long conversations with Copilot.
+    </p>
+  </div>
+</div>
+
+<!-- UNDERSTANDING AI -->
+<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
+  <div class="container">
+    <div class="col-md-6" style="padding:30px;">
+      <h2>Understanding AI Algorithms</h2>
+      <p>
+        Artificial Intelligence relies on algorithms that allow machines to learn from data,
+        recognize patterns, and make decisions. These algorithms do not think, reason, or understand
+        in a human sense, but they can approximate solutions to complex problems extremely well.
+      </p>
+      <p>
+        The three main approaches are supervised learning, unsupervised learning,
+        and reinforcement learning.
+      </p>
+    </div>
+    <div class="col-md-6" style="padding:30px;">
+      <img src="/AI.jpg" alt="Diagram showing AI algorithm flow"
+        style="width:100%; max-width:420px; border-radius:8px;" />
+    </div>
+  </div>
+</div>
+
+<!-- MACHINE LEARNING -->
+<div class="row sectionBlockLayout" style="padding:60px 0;">
+  <div class="container" style="max-width:900px;">
+    <h2>Machine Learning (ML)</h2>
+    <p>
+      Machine learning is a subset of AI that focuses on learning patterns from historical data
+      and making predictions on unseen data without being explicitly programmed for every scenario.
+    </p>
+    <p>
+      If you are an actuary, ML should feel familiar. Exams like SRM, PA, and MAS I and II cover
+      much of what we now label as statistical machine learning.
+    </p>
+
+    <ul>
+      <li><b>Supervised learning</b> uses labeled data and includes regression, GLMs, decision trees, and time series.</li>
+      <li><b>Unsupervised learning</b> identifies patterns in unlabeled data, including clustering and PCA.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- REINFORCEMENT LEARNING -->
+<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
+  <div class="container">
+    <div class="col-md-7" style="padding:30px;">
+      <h2>Reinforcement Learning (RL)</h2>
+      <p>
+        Reinforcement learning involves an agent interacting with an environment and learning
+        through rewards and penalties. The goal is not immediate success, but maximizing
+        long‑term cumulative reward.
+      </p>
+
+      <h4>Key RL Components</h4>
+      <ul>
+        <li><b>States:</b> possible configurations of the environment</li>
+        <li><b>Actions:</b> choices available to the agent</li>
+        <li><b>Rewards:</b> numerical feedback after actions</li>
+      </ul>
+
+      <p>
+        These components form a Markov Decision Process. The agent itself is conceptual,
+        but it must be implemented using concrete algorithms.
+      </p>
+    </div>
+
+    <div class="col-md-5" style="padding:30px;">
+      <img src="/Designer.png" alt="Reinforcement learning diagram"
+        style="width:100%; max-width:360px; border-radius:8px;" />
+    </div>
+  </div>
+</div>
+
+<!-- DEEP LEARNING -->
+<div class="row sectionBlockLayout" style="padding:60px 0;">
+  <div class="container">
+    <div class="col-md-6" style="padding:30px;">
+      <h2>Deep Learning (DL)</h2>
+      <p>
+        Deep learning is a subset of machine learning that uses multi‑layered neural networks
+        to learn complex representations from large datasets. Feature extraction occurs
+        automatically through learned representations.
+      </p>
+
+      <p style="font-style:italic;">
+        y = f(w · x + b)
+      </p>
+
+      <ul>
+        <li>x: inputs</li>
+        <li>w: weights</li>
+        <li>b: bias</li>
+        <li>f: activation function</li>
+      </ul>
+
+      <p>
+        Stack many of these equations together and you get a neural network —
+        essentially a very large mathematical function.
+      </p>
+    </div>
+
+    <div class="col-md-6" style="padding:30px;">
+      <img src="/Deep Learning.png" alt="Deep learning network illustration"
+        style="width:100%; max-width:420px; border-radius:8px;" />
+    </div>
+  </div>
+</div>
+
+<!-- ARCHITECTURES -->
+<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
+  <div class="container" style="max-width:900px;">
+    <h2>Architectures and Learning</h2>
+    <p>
+      Model architectures define how neural networks are structured.
+      CNNs specialize in vision, RNNs in sequential data such as language.
+    </p>
+    <p>
+      Training happens through algorithms like gradient descent and backpropagation,
+      which iteratively adjust weights to reduce error.
+    </p>
+    <p>
+      <b>Deep learning = architecture + learning algorithm + data.</b>
+    </p>
+  </div>
+</div>
+
+<!-- INTERPRETABILITY -->
+<div class="row sectionBlockLayout" style="padding:60px 0;">
+  <div class="container" style="max-width:900px;">
+    <h2>The Black Box Problem</h2>
+    <p>
+      Neural networks do not produce neat equations. Knowledge is distributed across
+      millions of parameters, making interpretation challenging.
+    </p>
+    <p>
+      Despite this, techniques exist to approximate and probe model behavior.
+    </p>
+    <a href="https://www.bbc.com/future/article/20230405-why-ai-is-becoming-impossible-for-humans-to-understand">
+      BBC: Why AI is becoming impossible for humans to understand
+    </a>
+  </div>
+</div>
+
+<!-- REFLECTION -->
+<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
+  <div class="container" style="max-width:900px;">
+    <h2>Final Thoughts</h2>
+    <p>
+      That was a lot. Hopefully you now feel more confident about machine learning and deep learning
+      than you did a few minutes ago.
+    </p>
+    <p>
+      AI makes learning more accessible than ever, but it is not perfect.
+      It can make mistakes or confidently explain something that is incorrect.
+    </p>
+    <p>
+      When the stakes are high, verify the results.
+      AI is powerful, but judgment still belongs to humans.
+    </p>
+  </div>
+</div>

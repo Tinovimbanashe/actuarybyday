@@ -1,300 +1,74 @@
-<link rel="stylesheet" href="layout.css">
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technical explanations of machine learning, reinforcement learning, and deep learning.">
+  <meta name="theme-color" content="#062b50">
+  <title>AI Technical Insights | Actuary by Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <nav class="navbar">
-    <div class="container nav-container">
-
-      <div class="nav-brand">
-        <a href="index.html">ActuaryByDay</a>
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#artifacts">Artifacts</a></li>
-        <li><a href="eco-travel.html">EcoTravel</a></li>
-        <li><a href="ai-technicals.html">AI Technicals</a></li>
-        <li><a href="neural-networks.html">Neural Networks</a></li>
-        <li><a href="ethical-ai.html">Ethical AI</a></li>
-        <li><a href="Personal-Framework.html">My AI Framework</a></li>
-      </ul>
-
-    </div>
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a class="brand" href="index.html" aria-label="Actuary by Day home">
+      <span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Actuary <b>by Day</b></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <ul class="nav-links" id="site-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#artifacts">Portfolio</a></li>
+      <li><a href="ai-technicals.html">AI Technicals</a></li>
+      <li><a href="neural-networks.html">Neural Networks</a></li>
+      <li><a href="ethical-ai.html">Ethical AI</a></li>
+      <li><a href="Personal-Framework.html">My AI Framework</a></li>
+    </ul>
   </nav>
 </header>
-
-
-
-<head>
-  ...
-  <style>
-      /* ========== GLOBAL LAYOUT SAFETY NET ========== */
-
-/* Constrain all images so they never overflow containers */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Prevent images from becoming too tall */
-img {
-  max-height: 450px;
-  object-fit: cover;
-}
-
-/* Ensure Bootstrap-like columns behave consistently */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Normalize containers across pages */
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Section spacing consistency */
-.sectionBlockLayout {
-  box-sizing: border-box;
-}
-
-/* Utility class for image previews (artifact cards, previews, etc.) */
-.preview-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Responsive fix for smaller screens */
-@media (max-width: 768px) {
-  img {
-    max-height: 300px;
-  }
-
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-  </style>
-</head>
-
-
-<!-- HERO SECTION -->
-<div class="row sectionBlockLayout" style="
-  padding: 8px; margin: 0;
-  min-height: 60vh;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-  url('https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/60ee08e5f4978a3485339ed5_layers.png');
-  background-position: center;
-  background-size: cover;
-">
-  <div class="container">
-    <div class="col-md-12" style="margin:180px 0; text-align:center; color:white;">
-      <h1>Technical Insights</h1>
-      <h4 style="color:#dddddd;">Exploring the Core of Artificial Intelligence</h4>
-    </div>
-  </div>
-</div>
-
-<!-- INTRO -->
-<div class="row sectionBlockLayout" style="padding:60px 0;">
-  <div class="container" style="max-width:900px;">
-    <h2>Less Razzle Dazzle, More Facts Please</h2>
-    <p>
-      While I am proud of my EcoTravel chatbot, I am even more proud of the lessons learnt and
-      my acceptance of the limitations of my own intelligence as a human living in the age of AI.
-    </p>
-    <p>
-      AI is fun to experiment with, but far more valuable when we actually understand what it is
-      and what it is not. This page captures my current understanding, shaped by class notes,
-      actuarial training, and many long conversations with Copilot.
-    </p>
-  </div>
-</div>
-
-<!-- UNDERSTANDING AI -->
-<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
-  <div class="container">
-    <div class="col-md-6" style="padding:30px;">
-      <h2>Understanding AI Algorithms</h2>
-      <p>
-        Artificial Intelligence relies on algorithms that allow machines to learn from data,
-        recognize patterns, and make decisions. These algorithms do not think, reason, or understand
-        in a human sense, but they can approximate solutions to complex problems extremely well.
-      </p>
-      <p>
-        The three main approaches are supervised learning, unsupervised learning,
-        and reinforcement learning.
-      </p>
-    </div>
-    <div class="col-md-6" style="padding:30px;">
-      <img src="Context.png" alt="Diagram showing AI algorithm flow"
-        style="width:100%; max-width:420px; border-radius:8px;" />
-    </div>
-  </div>
-</div>
-
-<!-- MACHINE LEARNING -->
-<div class="row sectionBlockLayout" style="padding:60px 0;">
-  <div class="container" style="max-width:900px;">
-    <h2>Machine Learning (ML)</h2>
-    <p>
-      Machine learning is a subset of AI that focuses on learning patterns from historical data
-      and making predictions on unseen data without being explicitly programmed for every scenario.
-    </p>
-    <p>
-      If you are an actuary, ML should feel familiar. Exams like SRM, PA, and MAS I and II cover
-      much of what we now label as statistical machine learning.
-    </p>
-
-    <ul>
-      <li><b>Supervised learning</b> uses labeled data and includes regression, GLMs, decision trees, and time series.</li>
-      <li><b>Unsupervised learning</b> identifies patterns in unlabeled data, including clustering and PCA.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- REINFORCEMENT LEARNING -->
-<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
-  <div class="container">
-    <div class="col-md-7" style="padding:30px;">
-      <h2>Reinforcement Learning (RL)</h2>
-      <p>
-        Reinforcement learning involves an agent interacting with an environment and learning
-        through rewards and penalties. The goal is not immediate success, but maximizing
-        long‑term cumulative reward.
-      </p>
-
-      <h4>Key RL Components</h4>
-      <ul>
-        <li><b>States:</b> possible configurations of the environment</li>
-        <li><b>Actions:</b> choices available to the agent</li>
-        <li><b>Rewards:</b> numerical feedback after actions</li>
-      </ul>
-
-      <p>
-        These components form a Markov Decision Process. The agent itself is conceptual,
-        but it must be implemented using concrete algorithms.
-      </p>
-    </div>
-
-    <div class="col-md-5" style="padding:30px;">
-      <img src="Designer.png" alt="Reinforcement learning diagram"
-        style="width:100%; max-width:360px; border-radius:8px;" />
-    </div>
-  </div>
-</div>
-
-<!-- DEEP LEARNING -->
-<div class="row sectionBlockLayout" style="padding:60px 0;">
-  <div class="container">
-    <div class="col-md-6" style="padding:30px;">
-      <h2>Deep Learning (DL)</h2>
-      <p>
-        Deep learning is a subset of machine learning that uses multi‑layered neural networks
-        to learn complex representations from large datasets. Feature extraction occurs
-        automatically through learned representations.
-      </p>
-
-      <p style="font-style:italic;">
-        y = f(w · x + b)
-      </p>
-
-      <ul>
-        <li>x: inputs</li>
-        <li>w: weights</li>
-        <li>b: bias</li>
-        <li>f: activation function</li>
-      </ul>
-
-      <p>
-        Stack many of these equations together and you get a neural network —
-        essentially a very large mathematical function.
-      </p>
-    </div>
-
-    <div class="col-md-6" style="padding:30px;">
-      <img src="Deep Learning.png" alt="Deep learning network illustration"
-        style="width:100%; max-width:420px; border-radius:8px;" />
-    </div>
-  </div>
-</div>
-
-<!-- ARCHITECTURES -->
-<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
-  <div class="container" style="max-width:900px;">
-    <h2>Architectures and Learning</h2>
-    <p>
-      Model architectures define how neural networks are structured.
-      CNNs specialize in vision, RNNs in sequential data such as language.
-    </p>
-    <p>
-      Training happens through algorithms like gradient descent and backpropagation,
-      which iteratively adjust weights to reduce error.
-    </p>
-    <p>
-      <b>Deep learning = architecture + learning algorithm + data.</b>
-    </p>
-  </div>
-</div>
-
-<!-- INTERPRETABILITY -->
-<div class="row sectionBlockLayout" style="padding:60px 0;">
-  <div class="container" style="max-width:900px;">
-    <h2>The Black Box Problem</h2>
-    <p>
-      Neural networks do not produce neat equations. Knowledge is distributed across
-      millions of parameters, making interpretation challenging.
-    </p>
-    <p>
-      Despite this, techniques exist to approximate and probe model behavior.
-    </p>
-    <a href="https://www.bbc.com/future/article/20230405-why-ai-is-becoming-impossible-for-humans-to-understand">
-      BBC: Why AI is becoming impossible for humans to understand
-    </a>
-  </div>
-</div>
-
-<!-- REFLECTION -->
-<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
-  <div class="container" style="max-width:900px;">
-    <h2>Final Thoughts</h2>
-    <p>
-      That was a lot. Hopefully you now feel more confident about machine learning and deep learning
-      than you did a few minutes ago.
-    </p>
-    <p>
-      AI makes learning more accessible than ever, but it is not perfect.
-      It can make mistakes or confidently explain something that is incorrect.
-    </p>
-    <p>
-      When the stakes are high, verify the results.
-      AI is powerful, but judgment still belongs to humans.
-    </p>
-  </div>
-</div>
-
-
-
+<main id="main">
+<section class="page-hero tech-hero"><div class="container hero-center"><p class="eyebrow">TECHNICAL FOUNDATIONS</p><h1>Technical Insights</h1><p class="lead">Exploring the Core of Artificial Intelligence</p></div></section>
+<section class="section"><div class="container content-narrow"><p class="eyebrow dark">INTRODUCTION</p><h2>Less Razzle Dazzle, More Facts Please</h2><p>While I am proud of my EcoTravel chatbot, I am even more proud of the lessons learnt and my acceptance of the limitations of my own intelligence as a human living in the age of AI.</p><p>AI is fun to experiment with, but far more valuable when we actually understand what it is and what it is not. This page captures my current understanding, shaped by class notes, actuarial training, and many long conversations with Copilot.</p></div></section>
+<section class="section section-soft"><div class="container split align-center"><div><p class="eyebrow dark">THE BIG PICTURE</p><h2>Understanding AI Algorithms</h2><p>Artificial Intelligence relies on algorithms that allow machines to learn from data, recognize patterns, and make decisions. These algorithms do not think, reason, or understand in a human sense, but they can approximate solutions to complex problems extremely well.</p><p>The three main approaches are supervised learning, unsupervised learning, and reinforcement learning.</p></div><div class="image-card diagram"><img src="Context.png" alt="Diagram showing AI algorithm flow"></div></div></section>
+<section class="section"><div class="container content-narrow"><p class="eyebrow dark">FOUNDATION 01</p><h2>Machine Learning (ML)</h2><p>Machine learning is a subset of AI that focuses on learning patterns from historical data and making predictions on unseen data without being explicitly programmed for every scenario.</p><p>If you are an actuary, ML should feel familiar. Exams like SRM, PA, and MAS I and II cover much of what we now label as statistical machine learning.</p><div class="two-cards"><article><h3>Supervised learning</h3><p>Uses labeled data and includes regression, GLMs, decision trees, and time series.</p></article><article><h3>Unsupervised learning</h3><p>Identifies patterns in unlabeled data, including clustering and PCA.</p></article></div></div></section>
+<section class="section section-soft"><div class="container split align-center"><div><p class="eyebrow dark">FOUNDATION 02</p><h2>Reinforcement Learning (RL)</h2><p>Reinforcement learning involves an agent interacting with an environment and learning through rewards and penalties. The goal is not immediate success, but maximizing long-term cumulative reward.</p><div class="chips"><span>States</span><span>Actions</span><span>Rewards</span></div><p>These components form a Markov Decision Process. The agent itself is conceptual, but it must be implemented using concrete algorithms.</p></div><div class="image-card diagram"><img src="Designer.png" alt="Reinforcement learning diagram"></div></div></section>
+<section class="section"><div class="container split align-center"><div><p class="eyebrow dark">FOUNDATION 03</p><h2>Deep Learning (DL)</h2><p>Deep learning is a subset of machine learning that uses multi-layered neural networks to learn complex representations from large datasets. Feature extraction occurs automatically through learned representations.</p><div class="formula">y = f(w · x + b)</div><div class="chips"><span>x: inputs</span><span>w: weights</span><span>b: bias</span><span>f: activation</span></div><p>Stack many of these equations together and you get a neural network, essentially a very large mathematical function.</p></div><div class="image-card diagram"><img src="Deep Learning.png" alt="Deep learning network illustration"></div></div></section>
+<section class="section section-soft"><div class="container content-narrow"><p class="eyebrow dark">MODEL DESIGN</p><h2>Architectures and Learning</h2><p>Model architectures define how neural networks are structured. CNNs specialize in vision, RNNs in sequential data such as language.</p><p>Training happens through algorithms like gradient descent and backpropagation, which iteratively adjust weights to reduce error.</p><blockquote>Deep learning = architecture + learning algorithm + data.</blockquote></div></section>
+<section class="section"><div class="container content-narrow"><p class="eyebrow dark">INTERPRETABILITY</p><h2>The Black Box Problem</h2><p>Neural networks do not produce neat equations. Knowledge is distributed across millions of parameters, making interpretation challenging.</p><p>Despite this, techniques exist to approximate and probe model behavior.</p><a class="text-link" href="https://www.bbc.com/future/article/20230405-why-ai-is-becoming-impossible-for-humans-to-understand" target="_blank" rel="noopener noreferrer">BBC: Why AI is becoming impossible for humans to understand <span>↗</span></a></div></section>
+<section class="section section-soft"><div class="container content-narrow"><p class="eyebrow dark">REFLECTION</p><h2>Final Thoughts</h2><p>That was a lot. Hopefully you now feel more confident about machine learning and deep learning than you did a few minutes ago.</p><p>AI makes learning more accessible than ever, but it is not perfect. It can make mistakes or confidently explain something that is incorrect.</p><blockquote>When the stakes are high, verify the results. AI is powerful, but judgment still belongs to humans.</blockquote></div></section>
+</main>
 <footer class="site-footer">
-  <div class="container footer-container">
-
-    <div class="footer-left">
-      <p>&copy; 2026 ActuaryByDay</p>
-      <p>Exploring how AI can enhance actuarial work</p>
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="index.html">Actuary <b>by Day</b></a>
+      <p>Using AI to enhance actuarial work.</p>
+      <p class="creator">Created by Tino Chigwada</p>
     </div>
-
-    <div class="footer-right">
-      <a href="https://github.com/Tinovimbanashe" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="footer-links" aria-label="External links">
+      <a href="https://github.com/Tinovimbanashe" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="#top">Back to top</a>
     </div>
-
   </div>
 </footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-links');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+  const current = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href').split('#')[0] === current) link.setAttribute('aria-current','page');
+  });
+</script>
+</body>
+</html>
 

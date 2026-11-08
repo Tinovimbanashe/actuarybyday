@@ -1,232 +1,70 @@
-<link rel="stylesheet" href="layout.css">
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual guide to neural networks and their applications.">
+  <meta name="theme-color" content="#062b50">
+  <title>Understanding Neural Networks | Actuary by Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <nav class="navbar">
-    <div class="container nav-container">
-
-      <div class="nav-brand">
-        <a href="index.html">ActuaryByDay</a>
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#artifacts">Artifacts</a></li>
-        <li><a href="eco-travel.html">EcoTravel</a></li>
-        <li><a href="ai-technicals.html">AI Technicals</a></li>
-        <li><a href="neural-networks.html">Neural Networks</a></li>
-        <li><a href="ethical-ai.html">Ethical AI</a></li>
-        <li><a href="Personal-Framework.html">My AI Framework</a></li>
-      </ul>
-
-    </div>
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a class="brand" href="index.html" aria-label="Actuary by Day home">
+      <span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Actuary <b>by Day</b></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <ul class="nav-links" id="site-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#artifacts">Portfolio</a></li>
+      <li><a href="ai-technicals.html">AI Technicals</a></li>
+      <li><a href="neural-networks.html">Neural Networks</a></li>
+      <li><a href="ethical-ai.html">Ethical AI</a></li>
+      <li><a href="Personal-Framework.html">My AI Framework</a></li>
+    </ul>
   </nav>
 </header>
-
-
-<head>
-  ...
-  <style>
-      /* ========== GLOBAL LAYOUT SAFETY NET ========== */
-
-/* Constrain all images so they never overflow containers */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Prevent images from becoming too tall */
-img {
-  max-height: 450px;
-  object-fit: cover;
-}
-
-/* Ensure Bootstrap-like columns behave consistently */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Normalize containers across pages */
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Section spacing consistency */
-.sectionBlockLayout {
-  box-sizing: border-box;
-}
-
-/* Utility class for image previews (artifact cards, previews, etc.) */
-.preview-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Responsive fix for smaller screens */
-@media (max-width: 768px) {
-  img {
-    max-height: 300px;
-  }
-
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
- /* Exception for full-visibility diagrams */
-.full-image {
-  max-height: none;
-  object-fit: contain;
-  width: 100%;
-}
-``
-  </style>
-</head>
-
-<!-- HERO SECTION -->
-<div class="row sectionBlockLayout" style="
-  padding: 8px; margin: 0;
-  min-height: 60vh;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-  url('https://thumbs.dreamstime.com/b/deep-neural-network-vector-illustration-light-green-blue-background-artificial-intelligence-deep-neural-network-123438198.jpg');
-  background-position: center;
-  background-size: cover;
-">
-  <div class="container">
-    <div class="col-md-12" style="margin:180px 0; text-align:center; color:white;">
-      <h1>Understanding Neural Networks</h1>
-      <h4>A Comprehensive Guide to the Basics and Applications</h4>
-    </div>
-  </div>
-</div>
-
-<!-- INTRO -->
-<div class="row sectionBlockLayout" style="padding:60px 0;">
-  <div class="container">
-    <div class="col-md-6" style="padding:30px;">
-      <h2>What Is a Neural Network?</h2>
-      <p>
-        Neural networks are computing systems inspired by the biological neural networks
-        of animal brains. They are designed to recognize patterns in data and are widely
-        used for classification, prediction, and decision‑making tasks.
-      </p>
-      <p>
-        At their core, neural networks learn from examples, much like humans learn
-        from experience.
-      </p>
-    </div>
-    <div class="col-md-6" style="padding:30px;">
-      <img
-        src="Neural network BG.jpg"
-        alt="Diagram of neural network layers"
-        style="width:100%; border-radius:6px;"
-      />
-    </div>
-  </div>
-</div>
-
-<!-- SIMPLE EXPLANATION -->
-<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
-  <div class="container" style="max-width:900px;">
-    <h2>Neural Networks, Explained Simply</h2>
-    <p>
-      A neural network is just a system that learns patterns. It looks at many examples,
-      identifies hidden relationships, and uses those patterns to make predictions on new data.
-    </p>
-    <p>
-      Neural networks are built from small units called neurons. Each neuron is a simple
-      calculator that takes numbers as inputs, multiplies them by weights, adds them together,
-      and decides whether to activate.
-    </p>
-    <p>
-      One neuron is simple. Deep learning uses millions of neurons working together.
-    </p>
-    <p>
-      Neurons are organized into layers, typically including an input layer,
-      one or more hidden layers, and an output layer. Each layer performs a different transformation,
-      and together these layers form a network.
-    </p>
-  </div>
-</div>
-
-<!-- AI GENERATED IMAGE SECTION -->
-<div class="row sectionBlockLayout" style="padding:60px 0;">
-  <div class="container" style="text-align:center;">
-    <h2>My AI‑Generated Neural Network Image</h2>
-    <p style="max-width:800px; margin:20px auto;">
-      Below is an AI‑generated image that visually represents how neural networks process
-      information across layers. This image helped solidify my understanding that neural networks
-      are not mysterious entities, but structured systems of mathematical operations.
-    </p>
-
-    <div style="display:flex; justify-content:center;">
-  <img
-    src="Best Image Neural Network.png"
-    alt="Best Image Neural Network"
-    class="full-image"
-    style="width:75%; max-width:1000px; border-radius:8px;
-  />
-</div>
-    
-  </div>
-</div>
-
-<!-- APPLICATIONS -->
-<div class="row sectionBlockLayout" style="padding:60px 0; background:#f7f7f7;">
-  <div class="container">
-    <h2 style="text-align:center;">Real‑World Applications</h2>
-
-    <div class="col-md-4" style="padding:30px;">
-      <img src="imgae recognition.jpeg" alt="Image recognition example" style="width:100%; border-radius:6px;" />
-      <h3>Image Recognition</h3>
-      <p class="smallText">
-        Neural networks can identify objects in images, enabling facial recognition,
-        medical imaging, and autonomous vehicles.
-      </p>
-    </div>
-
-    <div class="col-md-4" style="padding:30px;">
-      <img src="speech recognition.jpg" alt="Speech recognition waveform" style="width:100%; border-radius:6px;" />
-      <h3>Speech Recognition</h3>
-      <p class="smallText">
-        Neural networks convert spoken language into text and meaning,
-        powering virtual assistants and transcription tools.
-      </p>
-    </div>
-
-    <div class="col-md-4" style="padding:30px;">
-      <img src="finance n net.jpg" alt="Neural network predicting stock trends" style="width:100%; border-radius:6px;" />
-      <h3>Data Prediction</h3>
-      <p class="smallText">
-        In finance, healthcare, and economics, neural networks uncover patterns
-        and forecast trends from complex datasets.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
+<main id="main">
+<section class="page-hero neural-hero"><div class="container hero-center"><p class="eyebrow">DEEP LEARNING</p><h1>Understanding Neural Networks</h1><p class="lead">A Comprehensive Guide to the Basics and Applications</p></div></section>
+<section class="section"><div class="container split align-center"><div><p class="eyebrow dark">THE BASICS</p><h2>What Is a Neural Network?</h2><p>Neural networks are computing systems inspired by the biological neural networks of animal brains. They are designed to recognize patterns in data and are widely used for classification, prediction, and decision-making tasks.</p><p>At their core, neural networks learn from examples, much like humans learn from experience.</p></div><div class="image-card diagram"><img src="Neural network BG.jpg" alt="Diagram of neural network layers"></div></div></section>
+<section class="section section-soft"><div class="container content-narrow"><p class="eyebrow dark">PLAIN LANGUAGE</p><h2>Neural Networks, Explained Simply</h2><p>A neural network is just a system that learns patterns. It looks at many examples, identifies hidden relationships, and uses those patterns to make predictions on new data.</p><p>Neural networks are built from small units called neurons. Each neuron is a simple calculator that takes numbers as inputs, multiplies them by weights, adds them together, and decides whether to activate.</p><div class="process"><div><span>1</span><h3>Input layer</h3><p>Receives the data.</p></div><div><span>2</span><h3>Hidden layers</h3><p>Transform and learn patterns.</p></div><div><span>3</span><h3>Output layer</h3><p>Produces a prediction.</p></div></div><p>One neuron is simple. Deep learning uses millions of neurons working together.</p></div></section>
+<section class="section"><div class="container center"><p class="eyebrow dark">VISUAL EXPLANATION</p><h2>My AI-Generated Neural Network Image</h2><p class="intro-width">Below is an AI-generated image that visually represents how neural networks process information across layers. This image helped solidify my understanding that neural networks are not mysterious entities, but structured systems of mathematical operations.</p><img class="feature-diagram" src="Best Image Neural Network.png" alt="AI-generated visual representation of a neural network"></div></section>
+<section class="section section-soft"><div class="container"><div class="section-heading"><p class="eyebrow dark">APPLICATIONS</p><h2>Real-World Applications</h2></div><div class="project-grid three"><article class="project-card"><img src="imgae recognition.jpeg" alt="Image recognition example"><div class="card-body"><h3>Image Recognition</h3><p>Neural networks can identify objects in images, enabling facial recognition, medical imaging, and autonomous vehicles.</p></div></article><article class="project-card"><img src="speech recognition.jpg" alt="Speech recognition waveform"><div class="card-body"><h3>Speech Recognition</h3><p>Neural networks convert spoken language into text and meaning, powering virtual assistants and transcription tools.</p></div></article><article class="project-card"><img src="finance n net.jpg" alt="Neural network predicting financial trends"><div class="card-body"><h3>Data Prediction</h3><p>In finance, healthcare, and economics, neural networks uncover patterns and forecast trends from complex datasets.</p></div></article></div></div></section>
+</main>
 <footer class="site-footer">
-  <div class="container footer-container">
-
-    <div class="footer-left">
-      <p>&copy; 2026 ActuaryByDay</p>
-      <p>Exploring how AI can enhance actuarial work</p>
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="index.html">Actuary <b>by Day</b></a>
+      <p>Using AI to enhance actuarial work.</p>
+      <p class="creator">Created by Tino Chigwada</p>
     </div>
-
-    <div class="footer-right">
-      <a href="https://github.com/Tinovimbanashe" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="footer-links" aria-label="External links">
+      <a href="https://github.com/Tinovimbanashe" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="#top">Back to top</a>
     </div>
-
   </div>
-</footer>    
+</footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-links');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+  const current = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href').split('#')[0] === current) link.setAttribute('aria-current','page');
+  });
+</script>
+</body>
+</html>
     

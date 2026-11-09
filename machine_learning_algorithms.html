@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual guide to ten machine learning algorithms and their applications in actuarial work.">
+  <meta name="theme-color" content="#062b50">
+  <title>Machine Learning Algorithms | Actuary by Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="layout.css">
+  <style>
+    .ml-hero{min-height:520px;display:flex;align-items:center;background:radial-gradient(circle at 80% 10%,rgba(52,191,208,.28),transparent 30%),linear-gradient(135deg,#041d35,#083f6e);color:#fff;text-align:center}.ml-hero h1{color:#fff}.ml-hero .lead{max-width:780px;margin:0 auto 1.5rem;color:#d7eef4;font-size:1.15rem}.ml-intro{max-width:900px}.infographic-shell{padding:12px;background:#fff;border:1px solid #dce7ee;border-radius:20px;box-shadow:0 20px 55px rgba(6,43,80,.13)}.infographic-shell img{width:100%;height:auto;border-radius:13px}.classification-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}.classification-grid article{padding:28px;background:#fff;border:1px solid #dce7ee;border-radius:16px}.classification-grid h3{margin-bottom:10px}.tag-example{display:inline-block;margin:6px 6px 0 0;padding:6px 11px;border-radius:999px;font-size:.78rem;font-weight:800}.tag-learning{background:#dff4fb;color:#056b9f}.tag-domain{background:#fff0d7;color:#8a5500}@media(max-width:700px){.classification-grid{grid-template-columns:1fr}.ml-hero{min-height:450px}}
+  </style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary navigation">
+    <a class="brand" href="index.html" aria-label="Actuary by Day home"><span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span><span>Actuary <b>by Day</b></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <ul class="nav-links" id="site-menu">
+      <li><a href="index.html">Home</a></li><li><a href="index.html#artifacts">Portfolio</a></li><li><a href="ai-technicals.html">AI Technicals</a></li><li><a href="neural-networks.html">Neural Networks</a></li><li><a href="ethical-ai.html">Ethical AI</a></li><li><a href="Personal-Framework.html">My AI Framework</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="ml-hero"><div class="container"><p class="eyebrow">PORTFOLIO ARTIFACT</p><h1>Machine Learning Algorithms</h1><p class="lead">Ten important models, how the models learn, the data or capability each model supports, and practical applications in actuarial work.</p><a class="btn btn-primary" href="#infographic">View the infographic</a></div></section>
+  <section class="section"><div class="container ml-intro"><p class="eyebrow dark">WHY THIS ARTIFACT</p><h2>Familiar methods, expanding possibilities</h2><p>Actuaries are all too familiar with machine learning algorithms, either from working with them or from the various exams taken along the way. I created a handy infographic showing several machine learning models and their use cases. Do you know all of them, or is there one that is new to you?</p><div class="classification-grid"><article><h3>Learning paradigm</h3><p>This label explains <strong>how a model learns</strong>, such as supervised learning from labeled outcomes, unsupervised learning from unlabeled data, or generative learning that creates new data.</p><span class="tag-example tag-learning">Supervised</span><span class="tag-example tag-learning">Unsupervised</span><span class="tag-example tag-learning">Generative</span></article><article><h3>Application domain</h3><p>This label explains <strong>the type of data or capability</strong> associated with the model, such as tabular data, computer vision, natural language processing, or general generative applications.</p><span class="tag-example tag-domain">Tabular</span><span class="tag-example tag-domain">Computer Vision</span><span class="tag-example tag-domain">NLP</span></article></div></div></section>
+  <section id="infographic" class="section section-soft"><div class="container"><div class="section-heading"><p class="eyebrow dark">VISUAL GUIDE</p><h2>10 Machine Learning Algorithms</h2><p>The visual separates learning paradigms from application domains and uses a consistent diagram-based approach across all ten models.</p></div><div class="infographic-shell"><img src="Machine Learning Algorithms.png" alt="Infographic explaining ten machine learning algorithms and actuarial applications"></div></div></section>
+  <section class="section"><div class="container content-narrow"><p class="eyebrow dark">ACTUARIAL CONNECTION</p><h2>Why these models matter</h2><p>Machine learning can help actuaries strengthen risk assessment, automate analysis, identify fraud and anomalies, improve pricing decisions, interpret unstructured information, and create synthetic data for testing rare scenarios.</p><blockquote>Machine learning does not replace actuarial judgment. It expands the set of questions actuaries can investigate and the evidence available for decision-making.</blockquote></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="index.html">Actuary <b>by Day</b></a><p>Using AI to enhance actuarial work.</p><p class="creator">Created by Tino Chigwada</p></div><div class="footer-links"><a href="https://github.com/Tinovimbanashe" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="#top">Back to top</a></div></div></footer>
+<script>const toggle=document.querySelector('.nav-toggle');const menu=document.querySelector('.nav-links');if(toggle&&menu){toggle.addEventListener('click',()=>{const open=menu.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));});}</script>
+</body>
+</html>
